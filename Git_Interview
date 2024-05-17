@@ -1,0 +1,236 @@
+Question 1
+Which command is used to initialize a new Git repository?
+a) git start
+b) git init
+c) git create
+d) git new
+
+Answer: b) git init
+
+Question 2
+How do you stage all changes in your working directory for the next commit?
+a) git add .
+b) git commit -m "message"
+c) git push
+d) git stage
+
+Answer: a) git add .
+
+Question 3
+Which command is used to see the history of commits?
+a) git log
+b) git status
+c) git history
+d) git show
+
+Answer: a) git log
+
+Question 4 
+You want to initialize a git bisect session to identify which commit introduced an unexpected performance enhancement. What steps must you take before Git will return a commit for you to verify its performance?
+
+a) Start the bisect, then declare the ref of where the enhancement was first noticed.
+b) Start the bisect, then Git will display a prompt for the information it needs.
+c) Start the bisect, then pass in a script to output commit refs to the terminal window.
+d) Start the bisect, then declare both a good and a bad ref.
+
+Answer Start the bisect, then declare both a good and a bad ref.
+
+Question 5 What command can result in a fast-forward?
+
+a) fetch
+b) status
+c) pull
+d) branch
+
+Answer pull
+
+Question 6 
+Which command may lead to a detached HEAD situation?
+
+a) git head
+b) git commit
+c) git branch
+d) git checkout
+
+Answer git checkout
+
+Question 7 
+What is the default option for git reset?
+a)--mixed
+b)--soft
+c)--cancel
+d)--hard
+
+Answer --mixed
+
+Question 8 
+The output of the command git branch on your repository is:
+git branch
+item-edition
+newsletters
+mailing-lists
+*main
+What would happen if you run the command git branch -f newsletters?
+
+a) It would overwrite the existing newsletters branch, making it point to the HEAD of the main branch.
+b) It would merge the existing main branch with the newsletters branch.  
+c) It would merge the existing newsletters branch with the main branch. 
+d) It would overwrite the existing main branch, making it point to the HEAD of the newsletters branch.
+
+Answer It would overwrite the existing newsletters branch, making it point to the HEAD of the main branch.
+
+Question 9
+
+What tasks are specific to git add --interactive?
+a) Patch, update, and revert
+b) Reset, revert, and patch
+c) Patch, update, and commit
+d) Patch, pull, and push
+
+Answer Patch, update, and revert
+
+Question 10 
+What effect does the mirror flag have when cloning a repository?
+
+a) Mirror creates a second copy of the repository to the directory that you specify.
+b) Mirror ensures an entire copy of the repository is made for backup purposes without tracking branches.
+c) Mirror grabs an entire copy of the repository, but it only tracks the remote branch origin/main.
+d) Mirror grabs an entire copy of the staging area except the remote tracking branches.
+
+Answer Mirror creates a second copy of the repository to the directory that you specify.
+
+Question 11
+You configured your Git merge with the --verify-signatures option. What is the outcome when you merge a branch that contains both signed and unsigned commits?
+
+a) The merge process requests confirmation to merge each unsigned commit.
+b) The merge process skips all unsigned commits.
+c) The merge process displays all checked signatures and fully merges all commits.
+d) The merge process throws a fatal error.
+
+Answer The merge process throws a fatal error.
+
+Question 12 
+What is a rebase conflict? 
+
+a) An error where a rebase branch contains objects that have different contents than their versions on the destination branch.
+b) An error where a rebase branch contains objects that have different hashes and names than their versions on the destination branch. 
+c) An event where a rebase branch contains objects that are different in state with their versions on the destination branch.
+d) An event where a rebase branch contains objects which state is not in conflict with the destination branch. 
+
+Answer An event where a rebase branch contains objects that have different contents than their versions on the destination branch.
+
+Q 13 
+What is the purpose of creating a submodule in your Git repository?
+
+a) To group parts of the repository for efficient transmission
+b) To keep commits separate between two repositories
+c) To merge upstream without conflicts
+d) To synchronize all dependencies of a project
+
+Ans To keep commits separate between two repositories
+
+Q 14
+What is the significance of the --- and +++ symbols in the following file1.txt?
+
+git diff a/file1.txt b/file1.txt
+index 94ec7fe..81cc76f 100644
+--- a/file1.txt
++++ b/file1.txt
+
+a) +++ indicates the version with the latest changes and --- indicates the prior version.
+b) +++ indicates the prior version and --- indicates the version with the latest changes.
+c) +++ shows whether the file was moved and --- shows the prior location.
+d) +++ indicates a new file that was added and --- indicates a recent file that was deleted.
+
+Ans --- indicates the prior version and +++ indicates the version with the latest changes.
+
+Q 15
+Using the following stash list, how do you pull in the oldest stash while ensuring that you maintain it in the stash?
+
+stash@{0}: WIP on feature/feature1: 850f537 New text
+stash@{1}: WIP on feature/feature1: 850f537 New text
+
+a) git stash pop stash@{0}
+b) git stash apply stash@{1}
+c) git stash pop stash@{1}
+d) git stash apply stash@{0}
+
+Ans - git stash apply stash@{1}
+
+Q16 
+Git stops in the middle of a merge because a file was modified in both branches. How would you determine which file caused the conflict?
+
+a) You must manually analyze the files in both branches to locate the conflict.
+b) The git status command lists the conflicting file as "Conflicting."
+c) The git log command lists the conflicting file as "Conflicting."
+d) The git status command lists the conflicting file as "Both modified."
+
+Answer You must manually analyze the files in both branches to locate the conflict.
+
+Q17 
+A submodule contains changes, including local changes and upstream changes from various contributors. You also have changes ready for a commit in the main project. What is the best solution to ensure that both main project and submodule changes are available for all contributors to access?
+
+a) git push --recurse-submodules=safe
+b) git push --recurse-submodules=on-demand
+c) git push --recurse-submodules=serial
+d) git push --recurse-submodules=check
+
+Ans git push --recurse-submodules=on-demand
+
+Q18 
+You look through the Git commit logs using the git log command to find the actual changes in the files. The printout shows a list of files and how many changes are in each one. What is wrong with how you used the log command?
+
+a) You did not include any flags and you should have used the --stat flag.
+b) You used the --stat flag when you should have used the --patch flag.
+c) You did not include any flags and you should have used the --patch flag.
+d) You used the --patch flag when you should have used the --stat flag.
+
+Ans You used the --stat flag when you should have used the --patch flag.
+
+Q19 
+While analyzing the history of a local branch, git show HEAD@{4} displays a commit from another branch. Why?
+
+a) You rebased onto another branch, but did not push the changes.
+b) Your current work was branched from another branch on origin.
+c) You are using Git plumbing shortnames instead of standard reference notation. 
+d) You are using reflog shortnames instead of standard reference notation.
+
+Ans You are using reflog shortnames instead of standard reference notation.
+
+Q20 
+You receive many duplicated commit messages on the main branch. What is the most likely reason?
+
+a) Someone rebased a branch, which created duplicate commit messages in different branches. All of those branches later ended up being either rebased or merged into main.
+b) Someone merged a branch with main instead of rebasing it, which caused duplicated commit messages on the master branch.
+c) Someone rebased a branch on main, which caused duplicated messages on the main branch.
+d) Someone merged a branch, which created duplicated commit messages in different branches. All those branches were later either rebased or merged into main.
+
+Ans Someone rebased a branch, which created duplicate commit messages in different branches. All of those branches later ended up being either rebased or merged into main.
+
+Q21 
+You cherry-pick all the commits from branch1 into branch2 and then reset branch1 to the current commit of branch2. Which is equivalent?
+
+a) Merging branch1 and branch2
+b) Rebasing branch1 on branch2, then rebasing branch2 on branch1
+c) Rebasing branch2 on branch1, then rebasing branch1 on branch2
+d) Merging branch1 on branch2, then rebasing branch2 on branch1
+
+Ans Merging branch1 and branch2
+
+Q22 
+You accidentally reset a developer's current working directory and use git reset --hard HEAD~1, which wipes out the developer's last commit and working directory changes. How could you undo the reset and revert the situation?
+a) Use git reflog to get the location of the commit you want to restore.
+b) Use the git reset --restore <hash of your commit> to undo the reset and revert the situation.
+c) Use git reflog -i 0 to get the hash of the latest changed commit and restore it. 
+d) Use git reflog to get the hash of the commit that you want to restore and then run git merge <hash>. You must do this within 90 days of the reset
+
+Ans Use git reflog to get the location of the commit you want to restore.
+
+Q23 
+You must remove the ignored and non-ignored files from your working directory while keeping sub directories and sub repositories. What command achieves this?
+a) git clean -d -n
+b) git clean -x -a
+c) git clean -f -x
+d) git clean -i -d
+
+Ans git clean -f -x
